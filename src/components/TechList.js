@@ -8,6 +8,7 @@ class TechList extends Component {
 
   handleInputChange = (e) => {
     this.setState({ newTech: e.target.value });
+    // pega o valor do input e atualiza a variável newTech
   };
 
   handleSubmit = (e) => {
@@ -15,12 +16,16 @@ class TechList extends Component {
 
     this.setState({
       techs: [...this.state.techs, this.state.newTech],
+      // remonta o array inserindo o item digitado no input
+
       newTech: "",
+      // apaga o valor que ficou digitado no input
     });
   };
 
   handleDelete = (tech) => {
     this.setState({ techs: this.state.techs.filter((t) => t !== tech) });
+    // retorna todas difetentes de (t) que está sendo clicado
   };
 
   render() {
