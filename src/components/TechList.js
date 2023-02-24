@@ -39,7 +39,7 @@ class TechList extends Component {
               // passando uma props
 
               onDelete={() => this.handleDelete(tech)}
-              // passando uma propriedade como uma função
+              // passando uma props como uma função
             />
           ))}
         </ul>
