@@ -42,6 +42,7 @@ class TechList extends Component {
               // passando uma props como uma função
             />
           ))}
+          <TechItem />
         </ul>
         <input
           type="text"
